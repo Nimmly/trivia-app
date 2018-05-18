@@ -4,9 +4,8 @@ class ChuckService{
     constructor () {
         this.client = new ChuckClient()
     }
-
-    getRandomJoke(){
-        return this.client.getRandomJoke()
+    getRandomJoke(category = ''){
+        return this.client.getRandomJoke(category)
     }
 }
 
